@@ -182,3 +182,176 @@ nav {
 .info-card p {
     font-size: clamp(8px, 3vw, 24px);
 }
+
+.contact-section {
+  text-align: center;
+  background-color: #f8f9fb;
+  padding: 50px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.contact-section h2 {
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: #222;
+}
+
+.subscribe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  /* margin-bottom: 30px; */
+}
+
+.subscribe input {
+  padding: 12px 15px;
+  width: 140px;
+  border: 1px solid #db8e00d0;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border 0.3s ease;
+  color:#DD940E;
+}
+
+.subscribe input:focus {
+  border-color: #db8e00d0;
+  outline: none;
+}
+
+input::placeholder {
+  color: #db8e00d0;
+}
+
+
+.subscribe button {
+  padding: 12px 20px;
+  background-color: #ffa600;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.subscribe button:hover {
+  background-color: #ffa600;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  border-radius: 50%;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Example social icons (using emoji fallback or SVG data URLs) */
+.facebook {
+  background-image: url("https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg");
+  background-color: #3b5998;
+}
+.twitter {
+  background-image: url("https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/twitter.svg");
+  background-color: #1da1f2;
+}
+.instagram {
+  background-image: url("https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg");
+  background-color: #e1306c;
+}
+.linkedin {
+  background-image: url("https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg");
+  background-color: #0077b5;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+.socials{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    border:#DA9413 2px solid;
+    border-radius: 5px;
+    width: 80vw;
+    height: 150px;
+    padding: 0 5px;
+}
+
+footer {
+    position: relative;
+    color: rgb(255, 169, 20);
+    text-align: center;
+    height: clamp(350px, 35vh, 550px);
+    margin-top: 200px;
+    background-image: url(https://images.unsplash.com/photo-1642227218426-3786b108ed00?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* iconyyyy */
+.additionals {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex-direction: row;
+  padding: 0 30px;
+  gap: 30px;
+  padding-top: 130px;
+  color: white;
+}
+
+.sections ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sections li {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.contacts-data a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.contacts-data a:hover {
+  text-decoration: underline;
+}
+
+.sections, .contacts-data{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.sections > *, .contacts-data > *{
+    margin: 0;
+    margin-top: 20px;
+}
+
+.contacts-data p{
+    margin: 0;
+    margin-top: 17px;
+}
